@@ -1,6 +1,7 @@
 import './App.css';
 import RandomQuote from './components/useEffect';
 import WaterTracker from './components/useState';
+import Search from './components/Search';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <div className='div'>
       <WaterTracker/>
       <RandomQuote/>
+      <Search/>
       </div>
     </>
   )

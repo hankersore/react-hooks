@@ -22,7 +22,14 @@ p {
 }
 
 .div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
