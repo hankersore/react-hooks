@@ -2,6 +2,8 @@ import './App.css';
 import RandomQuote from './components/useEffect';
 import WaterTracker from './components/useState';
 import Search from './components/Search';
+import { MoodProvider, UserProvider } from './components/useContext';
+import MoodAndUser from './components/MoodAndUser';
 
 function App() {
 
@@ -12,6 +14,11 @@ function App() {
       <WaterTracker/>
       <RandomQuote/>
       <Search/>
+      <MoodProvider>
+      <UserProvider>
+        <MoodAndUser />
+      </UserProvider>
+    </MoodProvider>
       </div>
     </>
   )
